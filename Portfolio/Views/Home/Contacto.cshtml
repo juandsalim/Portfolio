@@ -1,0 +1,34 @@
+﻿   
+@{
+    ViewData["Title"] = "Contacto";
+
+}
+
+<head>
+    <style>
+        body{
+            background-image: url(/imagenes/fondoContacto.jpg);
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position:center;
+        }
+    </style>
+</head>
+<h1>Formulario de contacto</h1>
+
+<form asp-asp-controller="Home"asp-action="Contacto">
+    <div class="mb-3">
+        <label for="Nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="Nombre"name="Nombre" placeholder="Fulano de tal" />
+    </div>
+    <div class=" mb-3">
+        <label for="Email" class="form-label">Email</label>
+        <input type="email" class="form-control" id=" =Email" name="Email" placeholder="nombre@ejemplo.com" />
+    </div>
+    <div class="mb-3">
+        <label for="Mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="Mensaje" name="Mensaje" rows="3"></textarea>
+    </div>
+    <button type="submit" class="ov-btn-slide-close">Enviar</button>
+    @*<button type="submit" class="btn btn-primary">Enviar</button>*@
+</form>

@@ -1,0 +1,23 @@
+﻿@model HomeIndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<head>
+    <style>
+        body {
+            background-image: url(/imagenes/fondo.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top;
+            
+        }
+       
+    </style>
+</head>
+
+
+<partial name="_Presentacion" />
+
+<partial name="_SeccionProyectos" model="Model.Proyectos"/>
