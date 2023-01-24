@@ -14,8 +14,19 @@ namespace Portfolio.Servicios
                 Link= "https://github.com/juandsalim/TattoStudio.git",
                 ImagenURL= "/imagenes/tattostudio.png",
 
+                
+            },
+            new Proyecto
+            {
+                Titulo= "WebPersonal",
+                Descripcion= "Modelo para un web personal, desarrolado en python y django framework",
+                Link= "https://github.com/juandsalim/webpersonal",
+                ImagenURL= "/imagenes/webpersonal.png",
+            }
 
-            } };
+                
+            
+            };
 
         }
     }
